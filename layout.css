@@ -1,0 +1,149 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #84c15b;
+  line-height: 1.2;
+}
+img {
+  max-width: 100%;
+}
+#container {
+  background-color: #84c15b;
+}
+#logo img {
+  width: 426px;
+}
+section,
+li,
+.linkbar,
+#vision p {
+  padding: 1rem;
+}
+/* For screen readers there needs to be a h1 tag? */
+h1 {
+  font-size: 0;
+}
+section {
+  background-color: white;
+  margin-block-end: 1rem;
+}
+#vision {
+  background-color: #84c15b;
+  font-size: 2rem;
+}
+nav ul {
+  margin-block-end: 1rem;
+}
+nav ul li {
+  background-color: #9dcd7c;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: gray 1px 1px 1px;
+  border: solid 1px #618e40;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 3px #618e40;
+}
+h2 {
+  font-size: 2rem;
+}
+.linkbar {
+  background-color: #cbcbcb;
+  margin-block-end: 1rem;
+}
+figure {
+  margin-block-end: -3.22px;
+}
+td.date {
+  font-weight: bold;
+  padding-inline-end: 1rem;
+}
+address {
+  color: white;
+}
+#vision img {
+  display: none;
+}
+
+/* FLEX */
+
+/* navbar */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+nav ul > * {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+/* vision bar */
+#vision {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#vision > * {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+/* boxes */
+#boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#boxes > * {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+/* Tablet view */
+@media screen and (min-width: 426px) {
+  nav ul {
+    flex-wrap: nowrap;
+  }
+  #vision {
+    background-image: url("https://c.pxhere.com/photos/fd/2a/paper_white_grey_handmade_handmade_paper_texture_papyrus_parchment-1412534.jpg!d");
+  }
+  #vision p {
+    flex-grow: 2;
+    flex-basis: 0;
+    margin: auto;
+  }
+  #vision figure {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  #vision img {
+    display: inline;
+    width: auto;
+  }
+  #boxes {
+    flex-wrap: wrap;
+  }
+  #specials,
+  #events {
+    flex-basis: 0;
+  }
+  #specials {
+    margin-inline-end: -1rem;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 769px) {
+  #news {
+    flex-basis: 0;
+  }
+  #events {
+    margin-inline-end: -1rem;
+  }
+}
