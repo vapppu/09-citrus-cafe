@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="layout.css" />
     <script></script>
+    <script
+      src="https://kit.fontawesome.com/82c466c008.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -19,38 +23,57 @@
       </header>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Menus</li>
-          <li>Reservation</li>
-          <li>Gallery</li>
-          <li>Contact</li>
+          <a href="#"><li>Home</li></a>
+          <a href="">
+            <li>Menus</li>
+          </a>
+          <a href="">
+            <li>Reservation</li>
+          </a>
+          <a href="">
+            <li>Gallery</li>
+          </a>
+          <a href="">
+            <li>Contact</li>
+          </a>
         </ul>
       </nav>
       <div id="maincontent">
         <h1>Citrus Cafe</h1>
         <article id="vision">
-          <p>
-            A new neighborhood kitchen using organic and sustainable ingredients
-            all locally sourced.
-          </p>
-          <figure>
-            <img
-              src="images/vision-image.png"
-              alt="Chef working at Citrus Cafe"
-            />
-          </figure>
+          <section id="visionbar">
+            <p>
+              A new neighborhood kitchen using organic and sustainable
+              ingredients all locally sourced.
+            </p>
+            <figure>
+              <img
+                src="images/vision-image.png"
+                alt="Chef working at Citrus Cafe"
+              />
+            </figure>
+          </section>
         </article>
         <article id="boxes">
           <section id="specials">
-            <div class="linkbar">
-              <h2>Today's specials</h2>
-            </div>
+            <a href="">
+              <h2 class="linkbar">
+                Today's specials<span
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </h2>
+            </a>
+
             <figure>
               <img src="images/tasty.jpg" alt="Tasty main course" />
             </figure>
           </section>
           <section id="events">
-            <div class="linkbar"><h2>Events</h2></div>
+            <a href="">
+              <h2 class="linkbar">
+                Events<span><i class="fa-solid fa-chevron-right"></i></span>
+              </h2>
+            </a>
             <figure>
               <img
                 src="images/interior.jpg"
@@ -59,7 +82,11 @@
             </figure>
           </section>
           <section id="news">
-            <div class="linkbar"><h2>News</h2></div>
+            <a href="">
+              <h2 class="linkbar">
+                News<span><i class="fa-solid fa-chevron-right"></i></span>
+              </h2>
+            </a>
             <table>
               <tbody id="news">
                 <tr>
@@ -97,7 +124,10 @@
       </div>
       <footer>
         <address>
-          Citrus Cafe<br />
+          Citrus Cafe<a href="">
+            <i class="sm-icon fa-brands fa-square-facebook"></i> </a
+          ><a href=""><i class="sm-icon fa-brands fa-square-twitter"></i></a
+          ><br />
           601 Townsend St, San Francisco, CA, 94117
         </address>
         <p id="phonenumber">415-555-5555</p>
